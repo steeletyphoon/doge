@@ -13,12 +13,12 @@ DogeDodge.Play.prototype = {
   },
 
   preload : function () {
-    this.load.spritesheet('background', 'assets/background.png');
+    this.load.spritesheet('background', 'assets/background.jpg');
   },
 
   create: function () {
     this.background = this.add.tileSprite(0,0,320,568,"background.jpg" );
-    this.backround.autoScroll(0,-50);
+    this.background.autoScroll(0,-50);
     this.background.scale.set(1);
   },
 
