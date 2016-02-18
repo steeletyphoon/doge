@@ -1,8 +1,8 @@
-:// STATE DogeDodge.play
+// STATE DogeDodge.play
 
 'use strict'
 
-var = Dogedodge = {}
+ var DogeDodge = {};
 
 DogeDodge.Play = function () {};
 
@@ -17,7 +17,7 @@ DogeDodge.Play.prototype = {
   },
 
   create: function () {
-    this.background = this.add.tileSprite(0,0,320,568,"background" );
+    this.background = this.add.tileSprite(0,0,320,568,"background.jpg" );
     this.backround.autoScroll(0,-50);
     this.background.scale.set(1);
   },
