@@ -7,6 +7,8 @@
   <script src="js/phaser.js"></script>
   <script>
     var game = new Phaser.Game(320,568);
+    game.state.add('play', DogeDodge.Play);
+    game.state.start('play');
     console.log("Whats Up Internet User!");
   </script>
   </body>
