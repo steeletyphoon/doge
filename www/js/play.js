@@ -27,8 +27,9 @@ DogeDodge.Play.prototype = {
     this.dodger.anchor.set(0.5,0.5);
     
     this.fall = this.add.sprite(296 ,200, 'fall');
-    this.fall.anchor.set(1,1);
-    
+    this.fall.anchor.set(5,5);
+    this.fall.scale.set(.25)
+
     this.cursors = game.input.keyboard.createCursorKeys();
 
   
