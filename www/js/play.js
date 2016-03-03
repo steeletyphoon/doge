@@ -44,6 +44,10 @@ DogeDodge.Play.prototype = {
     if (this.cursors.right.isDown) {
       this.dodger.x += 10;
     }
+    
+    if (this.fall.y > 568) {
+      this.fall.y = -10;
+    }
   }
 
 };
