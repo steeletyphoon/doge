@@ -15,7 +15,7 @@ DogeDodge.Play.prototype = {
   preload : function () {
     this.load.image('background', 'assets/background.jpg');
     this.load.spritesheet('dodger', 'assets/groom.png', 64,199,2);
-    this.load.spritesheet(
+    this.load.spritesheet('fall', 'assets/Imported piskel.png', 296, 200);
   },
 
   create: function () {
@@ -25,6 +25,8 @@ DogeDodge.Play.prototype = {
 
     this.dodger = this.add.sprite(160,518, 'dodger');
     this.dodger.anchor.set(0.5,0.5);
+    this.fall = this.add.sprite(296 ,200, 'fall');
+    this.fall.anchor.set(0.5,0.5);
     
     this.cursors = game.input.keyboard.createCursorKeys();
 
