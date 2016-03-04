@@ -49,7 +49,7 @@ DogeDodge.Play.prototype = {
     
     if (this.fall.y > 568) {
       this.fall.y = -10;
-      this.fall.x = game.rnd.integerInRange(0, 320)
+      this.fall.x = game.rnd.integerInRange(0, 280)
     }
   }
 
