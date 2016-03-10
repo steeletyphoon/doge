@@ -49,7 +49,7 @@ DogeDodge.Play.prototype = {
     }
     
     if (this.fall.y > 568) {
-      this.fall.y = -20;
+      this.fall.y = -240;
     }
   }
 
