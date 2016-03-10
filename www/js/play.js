@@ -31,7 +31,8 @@ DogeDodge.Play.prototype = {
     this.fall.scale.set(.25);
 
     this.cursors = game.input.keyboard.createCursorKeys();
-
+    
+    this.world.setBounds(0, 0, 320, 568);
   
   },
 
