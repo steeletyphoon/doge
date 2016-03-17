@@ -37,6 +37,9 @@ DogeDodge.Play.prototype = {
 
     this.cursors = game.input.keyboard.createCursorKeys();
     
+    game.physics.arcade.enable(this.dodge);
+    this.dodge.body.velocity.y = 1200;
+    
     this.dodger.body.collideWorldBounds = true;
      
   },
