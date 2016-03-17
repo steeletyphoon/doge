@@ -19,21 +19,26 @@ DogeDodge.Play.prototype = {
   },
 
   create: function () {
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
     this.background = this.add.tileSprite(0,0,320,568,"background" );
     this.background.autoScroll(0,50);
     this.background.scale.set(1);
 
     this.dodger = this.add.sprite(160,518, 'dodger');
     this.dodger.anchor.set(0.5,0.5);
-    
+    game.physics.arcade.enable(this.dodger);
+    this.dodger.enableBody = true;
+    this.dodger.physicsBodyType = Phaser.Physics.ARCADE;
+
     this.fall = this.add.sprite(296 ,200, 'fall');
     this.fall.anchor.set(2.5,4);
     this.fall.scale.set(.25);
 
     this.cursors = game.input.keyboard.createCursorKeys();
     
-    this.world.setBounds(0, 0, 320, 568);
-  
+    this.dodger.body.collideWorldBounds = true;
+     
   },
 
 
