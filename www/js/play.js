@@ -50,10 +50,10 @@ DogeDodge.Play.prototype = {
     this.fall.y += 3;
 
     if (this.cursors.left.isDown) {
-      this.dodger.x -= 10;
+      this.dodger.body.velocity.x = -1200;
     }
     if (this.cursors.right.isDown) {
-      this.dodger.x += 10;
+      this.dodger.body.velocity.x = 1200;
     }
     
     if (this.fall.y > 568) {
